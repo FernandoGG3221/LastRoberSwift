@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LastRober" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seguimiento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N89-Ge-zP6">
+                                <rect key="frame" x="25" y="54" width="364" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JH-Kg-oZY">
+                                <rect key="frame" x="200" y="140" width="189" height="31"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reportar robo"/>
+                                <connections>
+                                    <action selector="btnRober:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nM-Mw-AVc"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-K5-Pan">
+                                <rect key="frame" x="5" y="564" width="404" height="198"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de último robo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agK-dX-CGf">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNe-6T-HKS">
+                                        <rect key="frame" x="0.0" y="56" width="404" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad de días desde el útimo robo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJo-ll-MnR">
+                                        <rect key="frame" x="0.0" y="112" width="404" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltw-PL-PI5">
+                                        <rect key="frame" x="0.0" y="168" width="404" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FNe-6T-HKS" secondAttribute="trailing" id="2HL-wW-oeV"/>
+                                    <constraint firstItem="agK-dX-CGf" firstAttribute="leading" secondItem="9fP-K5-Pan" secondAttribute="leading" id="5U5-cN-Gvl"/>
+                                    <constraint firstAttribute="trailing" secondItem="agK-dX-CGf" secondAttribute="trailing" id="JPi-hl-416"/>
+                                    <constraint firstItem="ltw-PL-PI5" firstAttribute="leading" secondItem="9fP-K5-Pan" secondAttribute="leading" id="SaB-Br-Bup"/>
+                                    <constraint firstItem="ltw-PL-PI5" firstAttribute="top" secondItem="NJo-ll-MnR" secondAttribute="bottom" constant="30" id="ZKl-hA-WXw"/>
+                                    <constraint firstItem="FNe-6T-HKS" firstAttribute="top" secondItem="agK-dX-CGf" secondAttribute="bottom" constant="30" id="abl-5M-NAX"/>
+                                    <constraint firstItem="NJo-ll-MnR" firstAttribute="leading" secondItem="9fP-K5-Pan" secondAttribute="leading" id="fpU-L0-2W1"/>
+                                    <constraint firstAttribute="trailing" secondItem="NJo-ll-MnR" secondAttribute="trailing" id="npC-u4-Xys"/>
+                                    <constraint firstItem="NJo-ll-MnR" firstAttribute="top" secondItem="FNe-6T-HKS" secondAttribute="bottom" constant="30" id="ntI-ST-NqN"/>
+                                    <constraint firstAttribute="trailing" secondItem="ltw-PL-PI5" secondAttribute="trailing" id="qyh-bP-ark"/>
+                                    <constraint firstItem="FNe-6T-HKS" firstAttribute="leading" secondItem="9fP-K5-Pan" secondAttribute="leading" id="tJQ-oc-ZJa"/>
+                                    <constraint firstAttribute="bottom" secondItem="ltw-PL-PI5" secondAttribute="bottom" constant="30" id="wvy-qh-3Jr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.17254901960784313" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9JH-Kg-oZY" secondAttribute="trailing" constant="25" id="Paz-VA-afa"/>
+                            <constraint firstItem="9JH-Kg-oZY" firstAttribute="top" secondItem="N89-Ge-zP6" secondAttribute="bottom" constant="50" id="djc-H4-mqk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9fP-K5-Pan" secondAttribute="bottom" constant="100" id="e1Y-Ax-iCh"/>
+                            <constraint firstItem="9fP-K5-Pan" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="fmV-fy-Elc"/>
+                            <constraint firstItem="9JH-Kg-oZY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="200" id="jkc-pp-oPa"/>
+                            <constraint firstItem="N89-Ge-zP6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="uwa-kD-xXe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N89-Ge-zP6" secondAttribute="trailing" constant="25" id="uzu-Nj-9lD"/>
+                            <constraint firstItem="N89-Ge-zP6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="wgY-h1-h9F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9fP-K5-Pan" secondAttribute="trailing" constant="5" id="xwz-k1-DJW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCountDays" destination="ltw-PL-PI5" id="tCm-sX-i45"/>
+                        <outlet property="lblDateLastRober" destination="FNe-6T-HKS" id="15d-7J-UWT"/>
+                        <outlet property="lblLastRober" destination="agK-dX-CGf" id="ATm-rv-zjA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
