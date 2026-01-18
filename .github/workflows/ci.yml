@@ -1,4 +1,4 @@
-name: Version Xcode
+name: Swift CI
 
 on:
     push:
@@ -9,9 +9,11 @@ on:
     
 jobs:
     build:
-        runs-on: macos-latest
-        steps:
+    runs-on: macos-latest
     
-            - name: check Xcode version
-            run: /usr/bin/xcodebuild -version
-
+    steps:
+        - name: Checkout repository
+        uses: actions/checkout@v4
+        
+        - name: Check Xcode version
+        run: xcodebuild -version
